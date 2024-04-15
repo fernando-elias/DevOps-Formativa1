@@ -14,8 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: python3 -V
-      - run: tidy -v
-      - run: sudo apt install tidy
+      - run: sudo apt install tidy -y
 
   test-job:
     runs-on: ubuntu-latest
