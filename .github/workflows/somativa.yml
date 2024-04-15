@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: tidy homeapage.html > output.html
+      - run: tidy homepage.html > output.html
       - run: cat output.html
 
   deploy-job:
