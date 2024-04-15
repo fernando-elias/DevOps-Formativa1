@@ -20,10 +20,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run : cat homepage.html
-      - uses: pavi2410/html-preview-action@v2 
-        with: 
-          html_file: 'homepage.html'
-      - run: steps.html_preview.outputs.url
 
   deploy-job:
     runs-on: ubuntu-latest
