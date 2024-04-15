@@ -22,7 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: tidy homepage.html > page2.html
-      - name: Print generated page
       - run: cat page2.html
 
   deploy-job:
