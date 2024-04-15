@@ -14,14 +14,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: python3 -V
-      - run: sudo apt install tidy -y
 
   test-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: tidy homepage.html > output.html
-      - run: cat output.html
+      - uses: pavi2410/html-preview-action@v2 
+        with: 
+          html_file: 'homepage.html'
 
   deploy-job:
     runs-on: ubuntu-latest
